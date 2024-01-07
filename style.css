@@ -2,6 +2,10 @@
     padding: 0;
     margin: 0;
 }
+/* body{
+    display: flex;
+    flex-direction: row;
+} */
 .body{
     background: url(snake.jpg);
     min-height: 100vh;
@@ -9,8 +13,31 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
+.scores{
+    background: red;
+    width: 100px;
+    margin: 5px 0;
+    border-radius: 20px;
+    font-size: 20px;
+}
+#score-log{
+    /* position: absolute;
+    top:10px;
+    left:20px; */
+    background-color: black;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    color:white;
+    padding:10px 10px;
+    width: 200px;
+    border-radius: 20px;
 }
 
 #board{
@@ -35,7 +62,7 @@
     border-radius: 10px;
 }
 .food{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(89, 255, 0);
     border:2px solid black;
     border-radius: 10px;
 }
