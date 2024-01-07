@@ -13,6 +13,7 @@
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
+    /* flex-wrap: wrap; */
     justify-content: space-around;
     align-items: center;
     flex-direction: row;
@@ -66,3 +67,13 @@
     border:2px solid black;
     border-radius: 10px;
 }
+@media only screen and (max-width: 420px) {
+    .body {
+      flex-direction: column;
+    }
+  }
+  @media only screen and (min-width: 420px) {
+    .body {
+      flex-direction: row;
+    }
+  }
